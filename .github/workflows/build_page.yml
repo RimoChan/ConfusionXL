@@ -1,0 +1,27 @@
+name: nyanya
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  pg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TOKEN }}
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - name: Install dependencies
+        run: python -m pip install opencv-python==4.9.0.80 pillow==10.3.0
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b pg
+          python 快.py
+          git add .
+          git commit -m "好！"
+          git push --set-upstream --force origin pg
