@@ -1,7 +1,7 @@
 name: nyanya
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "slave" ]
   workflow_dispatch:
 
 jobs:
