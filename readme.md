@@ -24,6 +24,11 @@ ConfusionXL是世界上最好的2次元模型，它好在:
 - 不需要额外的prompts，就能生成高质量的插画。
 
 
+## 下载地址
+
+Github的LFS超过1G居然要收钱，所以我就把模型传到Civitai了，下载的链接在这里: <https://civitai.com/models/358055>
+
+
 ## 模型效果
 
 <img align="right" src="fuku/alice.png" width="250px">
