@@ -23,10 +23,10 @@ ConfusionXL是世界上最好的2次元模型，它好在:
 
 - 不需要额外的prompts，就能生成高质量的插画。
 
-<img align="right" src="fuku/alice.png" width="250px">
-
 
 ## 模型效果
+
+<img align="right" src="fuku/alice.png" width="250px">
 
 我们先做1个约定。
 
@@ -58,7 +58,7 @@ Alice in glitterworld
 
 普通的站、坐、走路之类的标签对这个模型太简单了，反正都能画，所以我们跳过，从难的开始！
 
-为了防止我专门挑效果好的标签做样子，我就直接从[标签超市](https://tags.novelai.dev)的分类中，选1些罕见的标签，规则是固定从使用次数低于5k的标签开始，往下数8个标签，(不过会跳过NSFW和不适合1个人用的标签)，这些就是要测的内容。
+为了防止我专门挑效果好的标签做样子，我就直接从[标签超市](https://tags.novelai.dev)的分类中，选1些罕见的标签，规则是固定从使用次数低于5k的标签开始，往下数8个标签 (不过会跳过NSFW和不适合1个人用的标签)，这些就是要测的内容。
 
 生成结果是这样——
 
@@ -76,7 +76,7 @@ Alice in glitterworld
 
 | 三白眼 (sanpaku) | 脸色苍白 (turn pale) | 实心圆眼睛 (solid circle eyes) | 怒视 (glaring) | 没画出嘴 (no mouth) | 愤怒 (>:() | 流泪 (streaming tears) | 傲娇 (tsundere) |
 |---:|---:|---:|---:|---:|---:|---:|---:|
-| ![](face/sanpaku.png) | ![](face/turn_pale.png) | ![](face/solid_circle_eyes.png) | ![](face/glaring.png) | ![](face/no_mouth.png) | ![](face/_.png) | ![](face/streaming_tears.png) | ![](face/tsundere.png) |
+| ![](face/sanpaku.png) | ![](face/turn_pale.png) | ![](face/solid_circle_eyes.png) | ![](face/glaring.png) | ![](face/no_mouth.png) | ![](face/a.png) | ![](face/streaming_tears.png) | ![](face/tsundere.png) |
 | 没画出来 | 画对了 | 画对了 | 画对了 | 画对了，但眼睛怎么也没了 | 画对了，还有表情就叫这个不是我打错 | 画对了 | 画对了 |
 
 其实按顺序中间应该还有yellow sclera、crazy eyes，结果也是对的，但是感觉这2个标签有点吓人就不放了。
