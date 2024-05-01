@@ -29,5 +29,7 @@ with open('readme.md', encoding='utf8') as f:
     s = f.read()
 s = re.sub(r'!\[.*?\]\((?P<name>.+?\.((png)|(jpg)))\)', repl, s)
 
+s = s.replace('fuku/alice.png', 'fuku/alice.webp')    # 这个不是markdown格式，手动改1下
+
 with open('readme.md', 'w', encoding='utf8') as f:
     f.write(s)
